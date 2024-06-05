@@ -3,11 +3,11 @@ from config import Config
 from helpers.llm_helper import chat, stream_parser
 
 st.set_page_config(
-    page_title=Config.PAGE_TITLE,
+    page_title="Eliot - Quiz Histoire",
     initial_sidebar_state="expanded"
 )
 
-st.title(Config.PAGE_TITLE)
+st.title("Eliot - Quiz Histoire")
 
 st.markdown(" Votre ami d'apprentissage interactif ! Plongez dans l'histoire, testez vos connaissances avec des quiz captivants et découvrez de nouvelles perspectives à chaque question. Transformez vos révisions en une aventure passionnante !")
 st.markdown("""\n""")
