@@ -1,7 +1,7 @@
 class Config:
-    PAGE_TITLE = "Streamlit Ollama Chatbot"
+    PAGE_TITLE = "Eliot - le chatbot éducatif "
 
-    OLLAMA_MODELS = ('Histoire', 'Geographie')
+    OLLAMA_MODELS = ('Histoire', 'Geographie', 'llama3:latest')
 
     SYSTEM_PROMPT = f"""You are a helpful chatbot that has access to the following 
                     open-source models {OLLAMA_MODELS}.

@@ -9,6 +9,9 @@ st.set_page_config(
 
 st.title(Config.PAGE_TITLE)
 
+st.markdown("Découvrez l'histoire de manière interactive avec notre bot ! Testez vos connaissances et apprenez grâce à des quiz historiques engageants.")
+st.markdown("""\n""")
+
 with st.sidebar:   
     st.markdown("# Chat Options")
     model = st.selectbox('What model would you like to use?', Config.OLLAMA_MODELS)
