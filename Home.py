@@ -16,7 +16,7 @@ st.title(Config.PAGE_TITLE)
 
 st.markdown(" Votre ami d'apprentissage interactif ! Plongez dans l'histoire, testez vos connaissances avec des quiz captivants et découvrez de nouvelles perspectives à chaque question. Transformez vos révisions en une aventure passionnante !")
 st.markdown("""\n""")
-st.markdown("Select one of the following screens to start your interview!")
+st.markdown("Découvrez nos différentes pages:")
 
 selected = option_menu(
         menu_title= None,
@@ -32,7 +32,7 @@ if selected == 'Statistique':
         Consultez vos scores, identifiez vos points forts, et repérez les domaines à améliorer.
         Cliquez sur le bouton ci-dessous pour accéder à votre tableau détaillé de statistiques et suivez votre progression !\n """)
     if st.button("C'est parti!"):
-        st.switch_page("pages/Statistique")
+        st.switch_page("pages\Statistique.py")
 if selected == 'Quiz Histoire':
     st.info("""
         ❓Quiz d'Histoire
@@ -43,7 +43,7 @@ if selected == 'Quiz Histoire':
      """
     )
     if st.button("C'est parti!"):
-        st.switch_page("pages/HistoireBot.py")
+        st.switch_page("pages\HistoireBot.py")
 if selected == 'Quiz Géo':
     st.info("""
         ❓Quiz de Géographie\n
@@ -52,5 +52,5 @@ if selected == 'Quiz Géo':
         Bonne chance !\n
     """)
     if st.button("C'est parti!"):
-        st.switch_page("pages/GeographieBot")
+        st.switch_page("pages\GeographieBot.py")
 st.markdown("""\n""")
