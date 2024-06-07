@@ -20,7 +20,7 @@ st.markdown("Découvrez nos différentes pages:")
 
 selected = option_menu(
         menu_title= None,
-        options=["Quiz Histoire", "Quiz Géo"],
+        options=["Quiz Master", "Quiz Histoire", "Quiz Géo"],
         icons = ["bar-chart-line-fill", "book-half", "map-fill"],
         default_index=0,
         orientation="horizontal",
@@ -45,4 +45,15 @@ if selected == 'Quiz Géo':
     """)
     if st.button("C'est parti!"):
         st.switch_page("pages\GeographieBot.py")
+if selected == 'Quiz Master':
+    st.info("""
+        ❓Quiz Master
+
+        Prêt à tester vos connaissances ? 
+        Cliquez sur le bouton ci-dessous pour commencer un nouveau quiz et défier vos compétences. \n
+        Bonne chance !\n
+     """
+    )
+    if st.button("C'est parti!"):
+        st.switch_page("pages\QuizMaster.py")  
 st.markdown("""\n""")
