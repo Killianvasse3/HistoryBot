@@ -3,6 +3,8 @@ class Config:
 
     OLLAMA_MODELS = ('Histoire', 'Geographie', 'llama3:latest')
 
+    OLLAMA_MODEL = 'llama3:latest'
+
     SYSTEM_PROMPT = f"""
                         ## Introduction
                         Tu ne sais parler qu'en français.
