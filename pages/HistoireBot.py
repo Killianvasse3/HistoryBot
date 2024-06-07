@@ -1,5 +1,7 @@
 import streamlit as st
 import re
+from streamlit_lottie import st_lottie
+import json
 import pandas as pd
 import altair as alt
 from config import Config
@@ -9,6 +11,11 @@ st.set_page_config(
     page_title=Config.PAGE_TITLE,
     initial_sidebar_state="expanded"
 )
+
+def load_lottiefile(filepath: str):
+    with open(filepath, "r") as f:
+        return json.load(f)
+st_lottie(load_lottiefile("images/FloatingBoat.json"), speed=1, reverse=False, loop=True, quality="high", height=300, width=600)
 
 st.title(Config.PAGE_TITLE)
 

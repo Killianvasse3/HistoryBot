@@ -1,5 +1,5 @@
 class Config:
-    PAGE_TITLE = "Eliot - le chatbot éducatif "
+    PAGE_TITLE = "HistoryBot - le chatbot éducatif "
 
     OLLAMA_MODELS = ('Histoire', 'Geographie', 'llama3:latest')
 
