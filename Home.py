@@ -20,19 +20,11 @@ st.markdown("Découvrez nos différentes pages:")
 
 selected = option_menu(
         menu_title= None,
-        options=["Statistique", "Quiz Histoire", "Quiz Géo"],
+        options=["Quiz Histoire", "Quiz Géo"],
         icons = ["bar-chart-line-fill", "book-half", "map-fill"],
         default_index=0,
         orientation="horizontal",
     )
-if selected == 'Statistique':
-    st.info("""
-        📚 Statistiques de Quiz en Histoire et Géographie\n
-        Découvrez un aperçu de vos performances dans nos quiz d'histoire et de géographie.
-        Consultez vos scores, identifiez vos points forts, et repérez les domaines à améliorer.
-        Cliquez sur le bouton ci-dessous pour accéder à votre tableau détaillé de statistiques et suivez votre progression !\n """)
-    if st.button("C'est parti!"):
-        st.switch_page("pages\Statistique.py")
 if selected == 'Quiz Histoire':
     st.info("""
         ❓Quiz d'Histoire
